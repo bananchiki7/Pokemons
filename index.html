@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./_reset.scss">
+    <link rel="stylesheet" href="./index.scss">
     <title>Document</title>
 </head>
 <body>
+    <header></header>
+    <main>
+        <div class="loader-wrap is-hidden">
+            <span class="loader"></span>
+        </div>
+        <section class="names">
+            <div class="container">
+                <form class="names__form names-form" action="">
+                    <input class="names-form__input" type="text" placeholder="pokemon`s name">
+                    <button class="names-form__button" type="submit">submit</button>
+                </form>
+                <ul class="names__list names-list">
+                </ul>
+            </div>
+        </section>
     
-    <script src="./index.js"></script>
+        <section class="elements">
+            <div class="container">
+                <form class="elements__form elements-form" action="">
+                    <input class="elements-form__input" type="text" placeholder="pokemon`s element">
+                    <button class="elements-form__button" type="submit">submit</button>
+                </form>
+                <ul class="elemets__list elements-list"></ul>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
