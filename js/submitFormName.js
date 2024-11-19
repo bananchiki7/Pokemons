@@ -17,7 +17,7 @@ export async function submitFormName(event) {
             root.namesList.innerHTML = "<p>your pokemon is undefidned</p>";
             operateLoader()
         } else {
-            namePrevious = root.namesInput.value;;
+            namePrevious = root.namesInput.value;
             root.namesList.innerHTML = createCard(data, "names");
             operateLoader()
         }

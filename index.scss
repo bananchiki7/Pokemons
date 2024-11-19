@@ -35,9 +35,6 @@ input::placeholder{
 }
 .names-list {
 
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
     margin-top: 20px;
 
     &__picture{
@@ -120,8 +117,60 @@ input::placeholder{
     }
 }
 
+.card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(166, 179, 255, 0.6);
+}
+.card-form {
+
+		&__input {
+        width: 300px;
+        height: 50px;
+        font-size: 24px;
+        margin-bottom: 20px;
+		}
+
+		&__button {
+            width: 120px;
+            height: 50px;
+            border-radius: 10%;
+            border: none;
+            font-size: 24px;
+		}
+}
+.card-list {
+
+    &__picture{
+        width: 100%;
+        height: 55%;
+        margin-bottom: 5px;
+    }
+    &__name{
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+    &__height{
+        font-size: 20px;
+    }
+    &__weight{
+        font-size: 20px;
+    }
+    &__elements{
+        font-size: 20px;
+    }
+    &__item{
+        width: 250px;
+        height: 320px;
+        padding: 20px;
+        border: 3px solid #000;
+        border-radius: 5%;
+    }
+}
+
+
 .loader-wrap{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0, 0.85);

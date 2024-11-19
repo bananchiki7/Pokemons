@@ -3,6 +3,7 @@ import { root } from "./root";
 import { getDataElement } from "./service/api";
 import { createElements } from "./createElements";
 import { clearInput } from "./clearInput";
+import { operateCardAdd, operateCardRemove } from "./operateCard";
 
 export async function submitFormElements(event) {
     event.preventDefault()
@@ -12,9 +13,12 @@ export async function submitFormElements(event) {
     const data = await getDataElement(element);
     if (data === undefined) {
         root.elementsList.innerHTML = "<p>this element is undefidned</p>";
+        operateCardAdd()
     } else {
         createElements(data, "elements");
+        root.cardList.innerHTML = "";
+        operateCardRemove()
     }
-    clearInput("elementsForm")
     operateLoader()
+    clearInput("elementsForm")
 }
