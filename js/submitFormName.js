@@ -12,15 +12,14 @@ export async function submitFormName(event) {
     if(name !== namePrevious){
         operateLoader()
         const data = await getDataName(name);
-    
+        
         if(data === undefined){
             root.namesList.innerHTML = "<p>your pokemon is undefidned</p>";
-            operateLoader()
         } else {
             namePrevious = root.namesInput.value;
             root.namesList.innerHTML = createCard(data, "names");
-            operateLoader()
         }
+        operateLoader()
     }
     clearInput("namesForm")
 }
