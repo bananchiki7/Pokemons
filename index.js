@@ -1,3 +1,4 @@
+import "./js/operateSwiper";
 import { root } from "./js/root";
 import { submitFormCard } from "./js/submitFormCard";
 import { submitFormElements } from "./js/submitFormElements";

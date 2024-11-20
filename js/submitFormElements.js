@@ -11,7 +11,7 @@ export async function submitFormElements(event) {
     const element = root.elementsInput.value;
     operateLoader()
     const data = await getDataElement(element);
-    
+
     if (data === undefined) {
         root.elementsList.innerHTML = "<p>this element is undefidned</p>";
         operateCardAdd()
