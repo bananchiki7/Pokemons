@@ -14,7 +14,6 @@ const swiper = new Swiper(".swiper", {
 
     slidesPerView: 5,
     slidesPerGroup: 3,
-    // slidesPerColumn: 2,
     grid: {
         rows: 2, 
         fill: "row", 
