@@ -142,6 +142,15 @@ input::placeholder{
 		}
 }
 .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__item{
+        width: 300px;
+        height: 400px;
+        border: 3px solid #000;
+    }
 
     &__picture{
         width: 100%;

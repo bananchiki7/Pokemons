@@ -7,8 +7,8 @@ import { operateCardAdd, operateCardRemove } from "./operateCard";
 
 export async function submitFormElements(event) {
     event.preventDefault()
-
     const element = root.elementsInput.value;
+
     operateLoader()
     const data = await getDataElement(element);
 
@@ -16,10 +16,10 @@ export async function submitFormElements(event) {
         root.elementsList.innerHTML = "<p>this element is undefidned</p>";
         operateCardAdd()
     } else {
-        createElements(data, "elements");
+        createElements(data, "elements");   
         root.cardList.innerHTML = "";
         operateCardRemove()
     }
-    clearInput("elementsForm")
+    // clearInput("elementsForm")
     operateLoader()
 }

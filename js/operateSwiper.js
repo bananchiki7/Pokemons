@@ -8,7 +8,17 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
     },
 
+    autoHeight: false,
+    watchOverflow: true,
     spaceBetween: 50,
+
     slidesPerView: 5,
-    slidesPerGroup: 5,
+    slidesPerGroup: 3,
+    // slidesPerColumn: 2,
+    grid: {
+        rows: 2, 
+        fill: "row", 
+      },
+
+    // loop: true,
 });
